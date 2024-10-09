@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker-Spice</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="js/app.js" defer></script>
+    <link rel="shortcut icon" href="images/main.png" type="image/x-icon">
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper .swiper-pagination{
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="preloader">
+        <img src="images/load.gif" alt="" srcset="">
+    </div>
+
+    <header>
+        <div class="left-head">
+            <i class="fa-solid fa-utensils"></i>
+            <h1>hacker-spice</h1>
+        </div>
+        <div class="center-head">
+            <button><a href="#home">home</a></button>
+            <button><a href="#dishes">dishes</a></button>
+            <button><a href="#about">about</a></button>
+            <button><a href="#menu">menu</a></button>
+            <button><a href="#review">review</a></button>
+            <button><a href="#order">order</a></button>
+        </div>
+        <div class="right-head">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button><i class="fa-solid fa-heart"></i></button>
+            <button><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+    </header>
+
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper"></div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <section id="dishes">
+        <h3>our dishes</h3>
+        <h1>popular dishes</h1>
+        <div class="popular-items"></div>
+    </section>
+
+    <section class="swiper" id="about">
+        <h3>about us</h3>
+        <h1>why choose us?</h1>
+        <div class="swiper-wrapper">
+            <div class="about-container swiper-slide">
+                <img src="images/pngwing.com (14).png" alt="">
+                <div class="about-content">
+                    <h2>best food in country</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex harum animi, impedit ad consequatur minima velit tempora ut ullam, dolore aspernatur. 
+                        Excepturi sunt mollitia distinctio cum et veniam maxime nobis?
+                    </p>
+                    <ul>
+                        <li><button><i class="fa-solid fa-truck"></i>free delivery</button></li>
+                        <li><button><i class="fa-solid fa-dollar-sign"></i>easy to pay</button></li>
+                    </ul>
+                    <button id="moreBtn">learn more</button>
+                </div>
+            </div>
+            <div class="about-container swiper-slide">
+                <img src="images/pngwing.com (15).png" alt="">
+                <div class="about-content">
+                    <h2>best food in country</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex harum animi, impedit ad consequatur minima velit tempora ut ullam, dolore aspernatur. 
+                        Excepturi sunt mollitia distinctio cum et veniam maxime nobis?
+                    </p>
+                    <ul>
+                        <li><button><i class="fa-solid fa-truck"></i>free delivery</button></li>
+                        <li><button><i class="fa-solid fa-dollar-sign"></i>easy to pay</button></li>
+                    </ul>
+                    <button id="moreBtn">learn more</button>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <section id="menu">
+        <h3>our menu</h3>
+        <h1>today's speciality</h1>
+        <div class="menu-items"></div>
+    </section>
+
+    <!-------------Review Container----------->
+    <div class="swiper" id="review">
+            <h3>customer's review</h3>
+            <h1>what they say</h1>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper" id="review-items">
+              <!-- Slides -->
+                <div class="swiper-slide" id="review-item">
+                    <ul>
+                        <li class="profile">
+                            <img src="silambu.jpg" alt="">
+                            <div class="profile-name">
+                                <h4>silambu</h4>
+                                <p>*****</p>
+                            </div>
+                        </li>
+                        <li><span><i class="fa-solid fa-quote-right"></i></span></li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat fuga aliquam corporis necessitatibus laboriosam,
+                        minus quisquam ipsa labore vero omnis voluptate quos eos earum nostrum commodi laudantium tenetur recusandae iste!
+                    </p>
+               </div>
+               <div class="swiper-slide" id="review-item">
+                <ul>
+                    <li class="profile">
+                        <img src="silambu.jpg" alt="">
+                        <div class="profile-name">
+                            <h4>silambu</h4>
+                            <p>*****</p>
+                        </div>
+                    </li>
+                    <li><span><i class="fa-solid fa-quote-right"></i></span></li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat fuga aliquam corporis necessitatibus laboriosam,
+                    minus quisquam ipsa labore vero omnis voluptate quos eos earum nostrum commodi laudantium tenetur recusandae iste!
+                </p>
+           </div>
+           <div class="swiper-slide" id="review-item">
+            <ul>
+                <li class="profile">
+                    <img src="silambu.jpg" alt="">
+                    <div class="profile-name">
+                        <h4>silambu</h4>
+                        <p>*****</p>
+                    </div>
+                </li>
+                <li><span><i class="fa-solid fa-quote-right"></i></span></li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat fuga aliquam corporis necessitatibus laboriosam,
+                minus quisquam ipsa labore vero omnis voluptate quos eos earum nostrum commodi laudantium tenetur recusandae iste!
+            </p>
+        </div>
+    </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+    </div>
+
+
+
+    <section id="order">
+        <h3>order now</h3>
+        <h1>free and fast</h1>
+        <div class="order-container">
+            <form action="#">
+                <div class="data">
+                    <label for="">your name</label>
+                    <input type="text" name="" id="" placeholder="Enter your name" required>
+                </div>
+                <div class="data">
+                    <label for="">your number</label>
+                    <input type="number" name="" id="" placeholder="Enter your name" required>
+                </div>
+                <div class="data">
+                    <label for="">your order</label>
+                    <input type="text" name="" id="" placeholder="Enter your order" required>
+                </div>
+                <div class="data">
+                    <label for="">how much</label>
+                    <input type="text" name="" id="" placeholder="Enter your order" required>
+                </div>
+                <div class="data">
+                    <label for="">date and time</label>
+                    <input type="date" name="" id="" required>
+                </div>
+                <div class="data">
+                    <label for="">your address</label>
+                    <textarea name="" id="" cols="30" rows="10" required></textarea>
+                </div>
+                <button>order now</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <section class="footer_content">
+        <ul>
+            <h1>Locations</h1>
+            <li><a href="/">india</a></li>
+            <li><a href="/">Africa</a></li>
+            <li><a href="/">pakistan</a></li>
+            <li><a href="/">srilanka</a></li>
+        </ul>
+        <ul>
+            <h1>Quick Links</h1>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#dishes">Dishes</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#menu">menu</a></li>
+            <li><a href="#review">review</a></li>
+            <li><a href="#order">order</a></li>
+        </ul>
+        <ul>
+            <h1>Contact info</h1>
+            <li><a href="/">+123-456-7890</a></li>
+            <li><a href="/">silambuhacker404@gmail.com</a></li>
+            <li><a href="/">silambus74870@gmail.com</a></li>
+        </ul>
+        <ul>
+            <h1>Follow us</h1>
+            <li><a href="/">Facebook</a></li>
+            <li><a href="/">Twitter</a></li>
+            <li><a href="/">Instagram</a></li>
+            <li><a href="/">LinkedIn</a></li>
+        </ul>
+        </section>
+        <p>copyright@2024 by <a href="/">Mr.Silambuhacker</a></p>
+    </footer>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var preloader = document.querySelector(".preloader");
+        window.addEventListener('load', () => {
+            preloader.style.display= "none"
+        });
+        const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+    </script>
+</body>
+</html>

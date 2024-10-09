@@ -1,0 +1,587 @@
+body{
+    background-image: linear-gradient(60deg,#000,#020241);
+    background-repeat: no-repeat;
+}
+
+.preloader{
+    width: 100%;
+    height: 100vh;
+}
+
+.preloader img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+button{
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 5px 20px;
+    border-bottom: 1px solid black;
+    background-color: #060147;
+}
+header .left-head{
+    display: flex;
+    align-items: center;
+    color: orangered;
+}
+
+header .left-head i{
+    font-size: 2rem;
+    color: white;
+    width: 40px;
+}
+
+header .left-head h1{
+    text-transform: uppercase;
+}
+
+header .center-head{
+    display: flex;
+}
+
+header .center-head button{
+    width: 100px;
+}
+
+header .center-head button a:hover{
+    background-color: green;
+    padding: 5px;
+    color: #fff;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+header .center-head button a{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+header .right-head button{
+    width: 40px;
+    margin: 0px 3px;
+}
+
+header .right-head button i{
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+header .right-head button:hover{
+    background-color: orangered;
+    text-align: center;
+    transition: 0.5s;
+}
+
+#home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 30px 20px 30px;
+}
+
+#home .main-content{
+    height: 100%;
+    padding: 20px;
+}
+
+#home .main-content img{
+    width: 600px;
+}
+
+#home .main-data{
+    color: #fff;
+    text-transform: capitalize;
+}
+
+#home .main-data h3{
+    color: green;
+    font-size: 3rem;
+}
+
+#home .main-data h1{
+    font-size: 5rem;
+}
+
+#home .main-data p{
+    font-size: 1.5rem;
+    color: gray;
+}
+
+#home .main-data button{
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    background-color: rgb(28, 4, 161);
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+
+#home .main-data button:hover{
+    background-color: orangered;
+    transition: 0.5s;
+}
+
+#home .main-data button a{
+    color: #fff;
+    text-transform: capitalize;
+}
+
+#dishes{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5% 10%;
+}
+
+#dishes h3{
+    font-size: 2rem;
+    color: green;
+    margin: 10px 0px;
+}
+
+#dishes h1{
+    color: var(--main-color-);
+    font-size: 3rem;
+    margin: 10px 0px;
+}
+
+#dishes .popular-items .popular-item{
+    width: 300px;
+    height: 250px;
+    color: #fff;
+    padding: 20px;
+    background-color: rgb(2, 15, 70);
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+}
+
+#dishes .popular-items .popular-item img{
+    width: 200px;
+    height: 140px;
+    object-fit: contain;
+}
+
+#dishes .popular-items .popular-item h2{
+    text-transform: capitalize;
+    color: #ffffffbd;
+}
+
+#dishes .popular-items .popular-item .cart{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+#dishes .popular-items .popular-item span{
+    font-size: 1.5rem;
+}
+
+#dishes .popular-items .popular-item .cart button{
+    width: 50%;
+    text-transform: capitalize;
+    background-color: rgb(2, 72, 129);
+    font-size: 1.2rem;
+    color: wheat;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+#dishes .popular-items .popular-item .cart button:hover{
+    background-color: orangered;
+    transition: 0.5s;
+}
+
+#about{
+    width: 100%;
+    padding: 5% 0%;
+    height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#about h3{
+    font-size: 2rem;
+    color: green;
+}
+
+#about h1{
+    font-size: 3rem;
+    color: var(--main-color-);
+    margin: 1rem 0rem;
+}
+
+#about .about-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem 0rem;
+}
+
+#about .about-container img{
+    width: 500px;
+    height: 100%;
+}
+
+#about .about-container .about-content{
+    text-align: left;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+#about .about-container .about-content h2{
+    font-size: 3rem;
+    margin: 1rem 0rem;
+}
+
+#about .about-container .about-content p{
+    text-transform: capitalize;
+    color: gray;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+#about .about-container .about-content ul{
+    display: flex;
+    text-align: center;
+    margin: 1rem 0rem;
+}
+
+#about .about-container .about-content ul li{
+    display: flex;
+    align-items: center;
+    margin: 0px 10px 0px 0px;
+}
+
+#about .about-container .about-content ul li button{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: orange;
+    border: 1px solid gray;
+    padding: 5px 10px;
+}
+#about .about-container .about-content ul li button i{
+    width: 30px;
+}
+
+
+#about .about-container .about-content #moreBtn{
+    font-size: 1.3rem;
+    color: #ffffffdc;
+    padding: 3px 10px;
+    background-color: rgb(1, 3, 73);
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+
+#about .about-container .about-content #moreBtn:hover{
+    background-color: crimson;
+    transition: 0.5s;
+}
+
+#menu{
+    width: 100%;
+    padding: 5% 10%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#menu h3{
+    color: green;
+    font-size: 2rem;
+}
+
+#menu h1{
+    color: var(--main-color-);
+    font-size: 3rem;
+    margin: 1rem 0rem;
+}
+#menu .menu-items .menu-item{
+    display: inline-block;
+    width: 300px;
+    color: gray;
+    margin: 5px;
+    padding: 15px 10px;
+    background-color: #080829;
+}
+
+#menu .menu-items .menu-item img{
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+#menu .menu-items .menu-item p{
+    margin: 10px 0px;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+#menu .menu-items .menu-item .cart{
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu .menu-items .menu-item .cart button{
+    width: 60%;
+    font-size: 1.3rem;
+    background-color: #030358;
+    color: #fff;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+
+#menu .menu-items .menu-item .cart button:hover{
+    background-color: orangered;
+    transition: 0.5s;
+}
+
+#menu .menu-items .menu-item .cart span{
+    font-size: 1.5rem;
+    color: orange;
+}
+
+#review{
+    width: 100%;
+    padding: 5% 20%;
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+#review h3{
+    color: green;
+    font-size: 2rem;
+}
+
+#review h1{
+    color: var(--main-color-);
+    font-size: 3rem;
+    margin: 1rem 0rem;
+}
+
+#review #review-items{
+    display:flex;
+}
+
+#review #review-items #review-item{
+    width: 350px;
+    color: gray;
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 5px;
+}
+
+#review #review-items #review-item ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+#review #review-items #review-item ul .profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#review #review-items #review-item ul .profile h4{
+    font-size: 1.2rem;
+    color: wheat;
+}
+
+#review #review-items #review-item ul .profile img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#review #review-items #review-item ul li span{
+    font-size: 3rem;
+}
+
+#review p{
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    margin: 10px 0px;
+    text-align: left;
+}
+
+
+#order{
+    padding: 5% 0%;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#order h3{
+    font-size: 2rem;
+    color: green;
+}
+
+#order h1{
+    font-size: 3rem;
+    color: var(--main-color-);
+}
+
+.order-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#order form{
+    padding: 20px;
+    width: 500px;
+    margin: 1rem 0rem;
+    text-align: center;
+    background-color: #01011f;
+}
+
+#order form .data{
+    text-align: left;
+    margin: 10px;
+}
+
+#order form .data label{
+    width: 100%;
+    margin: 7px 0px;
+    color: gray;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+
+#order form .data input{
+    width: 100%;
+    color: #fff;
+    font-size: 1.4rem;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px 10px;
+    margin-top: 7px;
+    border-radius: 5px;
+}
+
+#order form .data input:focus{
+    border: 2px solid orangered;
+}
+
+#order form .data textarea{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 250px;
+    max-height: 250px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 1.3rem;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#order form button{
+    font-size: 1.3rem;
+    background-color: orangered;
+    color: #fff;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#order form button:hover{
+    transition: 0.5s;
+    background-color: #0b88b9;
+}
+
+
+@media(max-width:800px){
+    html{
+        font-size: 80%;
+    }
+    header .center-head{
+        display: none;
+    }
+
+    header .center-head li{
+        width: 10px;
+    }
+
+    header .right-head button{
+        width: 40px;
+    }
+
+    #home{
+        width: 100%;
+        display: block;
+    }
+
+    #home .main-content img{
+        width: 100%;
+    }
+
+    #about{
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+    #about .about-container{
+        display: block;
+    }
+
+    #about .about-container img{
+        width: 100%;
+    }
+
+    #about .about-container .about-content ul{
+        text-align: center;
+        padding: 0px;
+    }
+
+    #order{
+        padding: 10px;
+    }
+    #order form{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px 20px 20px 0px;
+    }
+
+    #order form input{
+        width: 100%;
+    }
+
+    #order form textarea{
+        min-width: 250px;
+        max-width: 275px;
+        width: 100%;
+    }
+}
